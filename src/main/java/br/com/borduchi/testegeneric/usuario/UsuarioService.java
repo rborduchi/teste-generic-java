@@ -1,8 +1,6 @@
 package br.com.borduchi.testegeneric.usuario;
 
-import br.com.borduchi.testegeneric.usuario.cliente.Cliente;
 import br.com.borduchi.testegeneric.usuario.component.save.SalvarUsuarioComponent;
-import br.com.borduchi.testegeneric.usuario.funcionario.Funcionario;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

@@ -12,7 +12,8 @@ public abstract class UsuarioController<T extends GenericUsuario<T>> {
     private final UsuarioService<T> usuarioService;
 
     protected UsuarioController(UsuarioRepositoryJpa<T> usuarioRepositoryJpa) {
-        this.usuarioService = new UsuarioService<T>(usuarioRepositoryJpa) {};
+        this.usuarioService = new UsuarioService<T>(usuarioRepositoryJpa) {
+        };
     }
 
     @GetMapping

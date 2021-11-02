@@ -20,7 +20,6 @@ public abstract class ValidarMaioridadeComponent<T extends GenericUsuario<T>> im
 
     public void process(T usuario) {
         int idade = getIdade(usuario.getDataNascimento());
-
         if (idade < MAIORIDADE) {
             throw new DataIntegrityViolationException(USUARIO_MENOR_DE_IDADE);
         }
