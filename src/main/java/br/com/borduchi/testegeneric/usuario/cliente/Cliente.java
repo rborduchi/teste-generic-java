@@ -6,12 +6,11 @@ import lombok.Getter;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
-import java.io.Serializable;
 
 @Getter
 @Entity
 @Table(name = "tb_cliente", schema = "teste_generic")
-public class Cliente extends Usuario implements Serializable, GenericUsuario<Cliente> {
+public class Cliente extends Usuario implements GenericUsuario<Cliente> {
 
     public Cliente() {
         super();
