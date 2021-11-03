@@ -23,11 +23,11 @@ public abstract class ProcessosFactory<T extends GenericUsuario<T>> {
     private final ValidarEnderecoNuloComponent<T> validarEnderecoNuloComponent;
 
     protected ProcessosFactory(UsuarioRepositoryJpa<T> usuarioRepositoryJpa) {
-        this.validarNomeRepetidoComponent = new ValidarNomeRepetidoComponent<T>(usuarioRepositoryJpa) {
+        this.validarNomeRepetidoComponent = new ValidarNomeRepetidoComponent<>(usuarioRepositoryJpa) {
         };
-        this.validarMaioridadeComponent = new ValidarMaioridadeComponent<T>(usuarioRepositoryJpa) {
+        this.validarMaioridadeComponent = new ValidarMaioridadeComponent<>(usuarioRepositoryJpa) {
         };
-        this.validarEnderecoNuloComponent = new ValidarEnderecoNuloComponent<T>(usuarioRepositoryJpa) {
+        this.validarEnderecoNuloComponent = new ValidarEnderecoNuloComponent<>(usuarioRepositoryJpa) {
         };
     }
 
